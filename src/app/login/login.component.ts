@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
       if (this.loginForm.controls.username.value === 'admin' && this.loginForm.controls.password.value === '123') {
         this.router.navigate(['home']);
       } else {
-        alert('Invalido')
+        alert('Credenciales Invalidas')
       }
     }
   }
