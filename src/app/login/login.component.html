@@ -1,0 +1,15 @@
+<h1>Bienvenido</h1>
+<br>
+<form [formGroup]="loginForm">
+    <label>Usuario</label>
+    <input formControlName="username" type="text">
+
+    <br><br>
+
+    <label>Password</label>
+    <input formControlName="password" type="password">
+</form>
+
+<br><br>
+
+<button (click)="login()">Acceder</button>
