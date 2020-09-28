@@ -10,7 +10,7 @@ import { RolComponent } from './rol/rol.component';
 
 const routes: Routes = [
     { 
-        path: '', component: UsuariosComponent ,
+        path: '', component: UsuariosComponent,
         children: [
             {path: 'new-user', component: NewUserComponent},
             {path: 'rol', component: RolComponent}
@@ -20,14 +20,14 @@ const routes: Routes = [
 
 @NgModule({
     declarations: [
-        UsuariosComponent,
-        NewUserComponent,
-        RolComponent
+      UsuariosComponent,
+      NewUserComponent,
+      RolComponent
     ],
     imports: [
-        CommonModule,
-        FormsModule,
-        RouterModule.forChild(routes)
+      CommonModule,
+      FormsModule,
+      RouterModule.forChild(routes),
     ]
-})
-export class UsuariosModule { }
+  })
+  export class UsuariosModule { }

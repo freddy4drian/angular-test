@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home.component';
 
 import { InicioComponent } from './inicio/inicio.component';
-import { UsuariosComponent } from './usuarios/usuarios.component';
+
 
 const routes: Routes = [
   {
@@ -24,8 +24,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     HomeComponent,
-    InicioComponent,
-    UsuariosComponent,
+    InicioComponent
   ],
   imports: [
     CommonModule,
