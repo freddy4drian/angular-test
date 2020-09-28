@@ -14,7 +14,7 @@ const routes: Routes = [
     children: [
       { path: '', pathMatch: 'full', redirectTo: 'inicio'  },
       { path: 'inicio', component: InicioComponent },
-      { path: 'usuarios', component: UsuariosComponent },
+      { path: 'usuarios', loadChildren: () => import('./usuarios/usuarios.module').then(m => m.UsuariosModule) },
       { path: 'clientes', loadChildren: () => import('./clientes/clientes.module').then(m => m.ClientesModule) },
     ]
   },
@@ -25,7 +25,7 @@ const routes: Routes = [
   declarations: [
     HomeComponent,
     InicioComponent,
-    UsuariosComponent
+    UsuariosComponent,
   ],
   imports: [
     CommonModule,
